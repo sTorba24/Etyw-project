@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(73,69,136,1) 0%, rgba(170,170,255,1) 52%, rgba(108,202,222,1) 78%);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 40s ease-in-out infinite;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.page-footer {
+  background-color: #fff;
+  flex: 0 0 auto;
+  //position: fixed;
+  //bottom: 0;
+  //width: 100%;
+}

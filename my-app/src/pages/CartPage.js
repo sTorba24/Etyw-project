@@ -29,14 +29,19 @@ export const CartPage = () => {
           <img className="pb-3 mx-auto" src={cartBig} alt='Cart'></img>
           {/*<span>Unfortunelly, you have no selected products</span>*/}
 
-          <Row xs={1} md={2} lg={3} className="g-4 mb-5">
-            <ProductsList products={products} productPage={false}></ProductsList>
-          </Row>
+          {products.length
+              ? <div>
+                <Row className="g-4 mb-5">
+                  <ProductsList products={products} productPage={false}></ProductsList>
+                </Row>
 
-          <div className="d-flex flex-column justify-content-center">
-            <h2>Total: {total}$</h2>
-            <Button className="bg-primary w-25 mx-auto"><Nav.Link className="link-dark" href="/checkout">Checkout</Nav.Link></Button>
-          </div>
+                <div className="d-flex flex-column justify-content-center">
+                  <h2>Total: {total}$</h2>
+                  <Button className="bg-primary w-25 mx-auto"><Nav.Link className="link-dark" href="/checkout">Checkout</Nav.Link></Button>
+                </div>
+              </div>
+              : <h4>Oops, You have no selected products. <Nav.Link href="/">Shop now</Nav.Link></h4>
+          }
         </div>
       </Card.Body>
     </Card>

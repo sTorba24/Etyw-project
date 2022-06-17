@@ -13,8 +13,8 @@ const Footer = () => <footer className="page-footer font-small blue pt-4">
       <div className="col-md-3 mb-md-0 mb-3">
         <h5 className="text-uppercase">Links</h5>
         <ul className="list-unstyled">
-          <li><a href="#!">Link 1</a></li>
-          <li><a href="#!">Link 2</a></li>
+          <li><a href="https://www.instagram.com/dieda_sher_shop/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ivDjWYcKDZI">MERN Project link</a></li>
           <li><a href="#!">Link 3</a></li>
           <li><a href="#!">Link 4</a></li>
         </ul>

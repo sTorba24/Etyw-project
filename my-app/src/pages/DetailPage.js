@@ -19,7 +19,7 @@ export const DetailPage = () => {
       setLink(fetched)
     } catch (e) {
     }
-  })
+  }, [request])
 
   useEffect(() => {
     getLink()

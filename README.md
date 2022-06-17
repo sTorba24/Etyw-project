@@ -10,6 +10,6 @@ You can use `npm run server` and `npm run client` to start server and front sepa
 
 # Setting for personal use
 
-In folder `config` find file `default.json` and change `mongoUri` field to have access to your MongoDB
+In folder `config` find a file `default.json` and change `mongoUri` field to have an access to your MongoDB
 
 # Project in still in development(be free to give feedback about bugs)
